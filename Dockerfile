@@ -7,9 +7,8 @@ RUN pip install --upgrade pip && \
 
 
 RUN apt update && \
-    apt install curl && \
-    apt install git && \
-    apt install golang
+    apt install -y curl git && \
+    apt install -y golang
 
 RUN git clone https://github.com/helm/helm.git && \
     cd helm && \
